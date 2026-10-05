@@ -1,0 +1,6 @@
+{
+  "name": "SpaceVocab - Cosmic English Learning",
+  "description": "Interactive cosmic-themed English vocabulary learning and arcade game app for SMP junior high school students, featuring Kemdikbud digital textbook lessons, crossword puzzles, word unscramble, and quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

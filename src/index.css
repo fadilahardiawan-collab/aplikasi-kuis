@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #0d1324;
+    --color-surface-dim: #0d1324;
+    --color-surface-bright: #33394b;
+    --color-surface-container-lowest: #070e1e;
+    --color-surface-container-low: #151b2c;
+    --color-surface-container: #191f30;
+    --color-surface-container-high: #24293b;
+    --color-surface-container-highest: #2e3447;
+    --color-surface-variant: #2e3447;
+    --color-on-surface: #dce2fa;
+    --color-on-surface-variant: #cbc3d7;
+    --color-primary: #d0bcff;
+    --color-primary-container: #a078ff;
+    --color-on-primary: #3c0091;
+    --color-on-primary-container: #340080;
+    --color-inverse-primary: #6d3bd7;
+    --color-secondary: #7bd0ff;
+    --color-secondary-container: #00a6e0;
+    --color-on-secondary: #00354a;
+    --color-on-secondary-container: #00374d;
+    --color-secondary-fixed: #c4e7ff;
+    --color-tertiary: #f9bd22;
+    --color-tertiary-container: #b88900;
+    --color-on-tertiary: #402d00;
+    --color-tertiary-fixed: #ffdf9f;
+    --color-outline: #958ea0;
+    --color-outline-variant: #494454;
+    --color-error: #ffb4ab;
+    --color-error-container: #93000a;
+  }
+
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1324;
+    color: #dce2fa;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-headline {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.cosmic-bg {
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 75px 120px, rgba(123, 208, 255, 0.7), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 160px 45px, rgba(208, 188, 255, 0.8), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 240px 190px, rgba(249, 189, 34, 0.7), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 320px 80px, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 350px 260px, rgba(123, 208, 255, 0.6), rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 380px 380px;
+}
+
+/* Material symbol font configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'liga';
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Safe area padding utilities */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+}
+
+/* Custom hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
